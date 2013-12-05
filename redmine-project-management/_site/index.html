@@ -70,7 +70,9 @@
   <title>Project Management with Redmine</title>
   <meta name="description" content="">
   <meta name="author" content="Bartek Szopka">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css"> 
+
+  <link href='http://fonts.googleapis.com/css?family=Trade+Winds|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
   <link href="css/b3tamax-grunge.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -144,7 +146,10 @@
         
     -->
     <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-        <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
+      <h1>Project Management With Redmine</h1>
+      <center>
+        <img src="images/redmine_logo.png" style="margin-top:-2em">
+      </center>
     </div>
 
     <!--
@@ -162,159 +167,186 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
         
     -->
-    <div class="step slide" data-x="0" data-y="-1500">
-        <q>Don't you think that presentations given <strong>in modern browsers</strong> shouldn't <strong>copy the limits</strong> of 'classic' slide decks?</q>
+    <div id="what" class="step slide" data-x="0" data-y="-1500">
+      <h1>What Is A Project</h1>
+      <ol>
+        <li>Technical</li>
+        <li>Editorial</li>
+        <li>Design</li>
+        <li>Requirements</li>
+        <li>Marketing</li>
+        <li>Timeliness</li>
+      </ol>
+      <br>
+      <div>What gets prioritized?</div>
+      <div>Changes?</div>
+      <div>Feedback?</div>
     </div>
 
-    <div class="step slide" data-x="1000" data-y="-1500">
-        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+    <div id="howdoweeven" class="step slide" data-x="1000" data-y="-1500">
+      <div>How does <i>anything</i> get done?</div>
+      <div>How does anything <i>stay</i> done?</div>
+      <div>Why are we so interested in the unknown unknowns?</div>
+      <div>Why do we focus so much on the known unknowns?</div>
+      <div>How do we know we've discovered all the unknown unknowns?</div>
+      <div>What's the value of an estimate on unknown unknowns?</div>
+      <div style="margin-bottom:1em">How do we get better estimates?</div>
+      <center>
+        <img src="/images/tim-and-eric-mind-blown.gif">
+      </center>
     </div>
 
-    <!--
-        
-        This is an example of step element being scaled.
-        
-        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
-        element will be 4 times larger than the others.
-        From presentation and transitions point of view it means, that it will have to be scaled
-        down (4 times) to make it back to its correct size.
-        
-    -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">then you should try</span>
-        <h1>impress.js<sup>*</sup></h1>
-        <span class="footnote"><sup>*</sup> no rhyme intended</span>
+
+    <div class="step slide" data-x="2000" data-y="-1500">
+      <h1>Complexity</h1>
+      <div>Enter 'PM' methodologies</div><br />
+      <ol>
+        <li>Waterfall</li>
+        <li>Prince2</li>
+        <li>PMI</li>
+        <li>Six Sigma</li>
+        <li>Lean Six Sigma</li>
+        <li>SDLC</li>
+        <li>CORBIT</li>
+        <li>Agile</li>
+        <li>RUP</li>
+      </ol>
     </div>
 
-    <!--
-        
-        This element introduces rotation.
-        
-        Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
-        element should be rotated by 90 degrees clockwise.
-        
-    -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>It's a <strong>presentation tool</strong> <br/>
-        inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+    <div class="step slide" data-x="3000" data-y="-1500">
+      <h1 style="margin-bottom:0em">MOAR Complexity</h1>
+      <ol style="margin-bottom:1em">
+        <li>Configuration Management</li>
+        <li>Environment Management</li>
+        <li>Documentation</li>
+        <li>Quality Assurance (QA) </li>
+        <li>User Experience (UX)</li>
+      </ol>
+      <center>
+      <img src="/images/eddie-whaaa.gif">
+      </center>
     </div>
 
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
+    <div class="step slide" data-x="-1000" data-y="0">
+      <h1>Enter Redmine</h1>
+      <ol>
+        <li>Free ( as in Freedom )</li>
+        <li>Issue Tracking ( Ticketing )</li>
+        <li>Project Administration</li>
+        <li>SCM browser</li>
+        <li>Documentation</li>
+        <li>Wiki</li>
+        <li>RESTful</li>
+        <li>More!</li>
+      </ol>
     </div>
 
-    <!--
-        
-        And now it gets really exciting! We move into third dimension!
-        
-        Along with `data-x` and `data-y`, you can define the position on third (Z) axis, with
-        `data-z`. In the example below we use `data-z="-3000"` meaning that element should be
-        positioned far away from us (by 3000px).
-        
-    -->
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>and <b>tiny</b> ideas</p>
+    <div class="step slide" data-x="0" data-y="0">
+      <h1>Cool...</h1>
+      <center>
+        <img style="min-height:380px" src="/images/omgcat.gif">
+      </center>
     </div>
 
-    <!--
-        
-        This step here doesn't introduce anything new when it comes to data attributes, but you
-        should notice in the demo that some words of this text are being animated.
-        It's a very basic CSS transition that is applied to the elements when this step element is
-        reached.
-        
-        At the very beginning of the presentation all step elements are given the class of `future`.
-        It means that they haven't been visited yet.
-        
-        When the presentation moves to given step `future` is changed to `present` class name.
-        That's how animation on this step works - text moves when the step has `present` class.
-        
-        Finally when the step is left the `present` class is removed from the element and `past`
-        class is added.
-        
-        So basically every step element has one of three classes: `future`, `present` and `past`.
-        Only one current step has the `present` class.
-        
-    -->
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
+    <div class="step slide" data-x="1000" data-y="0">
+      <h1>Redmine Checklist</h1>
+      <dl>
+        <dt>PM Method</dt>
+          <dd>What Project Methodology you're going to follow</dd>
+        <dt>Roles</dt>
+          <dd>Map from PM roles to team members</dd>
+        <dt>Timeline</dt>
+          <dd>What are the relevant dates for delivery?</dd>
+        <dt>Components</dt>
+          <dd>What are the components for delivery?</dd>
+      </dl>
     </div>
 
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
+    <div class="step slide" data-x="2000" data-y="0">
+      <h1 style="margin-bottom:0em">Let's Do This</h1>
+      <dl>
+        <dt>PM Method</dt>
+          <dd>Lean Scrum</dd>
+        <dt>Roles</dt>
+          <dd>JM -> Scrum Master</dd>
+          <dd>SC -> Design</dd>
+          <dd>DN -> QA</dd>
+        <dt>Timeline</dt>
+          <dd>11/1/2013 - Countdown</dd>
+          <dd>11/11/2013 - 11/18/2013 - Unveils begin</dd>
+          <dd>12/11/2013 - Put the toy away </dd>
+        <dt>Components</dt>
+          <dd>9 sections</dd>
+          <dd>3 new JS widgets</dd>
+          <dd>Daily Updates</dd>
+          <dd>CMS w/ <1s Update Time</dd>
+      </dl>
     </div>
 
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>want to know more?</p>
-        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
+    <div class="step slide" data-x="3000" data-y="0">
+      <center>
+        <img style="min-height:570px" src="/images/albundy_shock.gif" alt="Al is excited" />
+      </center>
     </div>
 
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
+    <div class="step" data-x="1000" data-y="-3000" data-rotate-y="100" >
+      <h1 style="font-family:'Trade Winds';color:white;">I wanna do that</h1>
+    </div>
+    <div class="step" data-x="1800" data-y="-2500" data-rotate-y="100">
+      <h1 style="font-family:'Trade Winds';color:white;">You can!</h1>
     </div>
 
-    <!--
-        
-        And the last one shows full power and flexibility of impress.js.
-        
-        You can not only position element in 3D, but also rotate it around any axis.
-        So this one here will get rotated by -40 degrees (40 degrees anticlockwise) around X axis and
-        10 degrees (clockwise) around Y axis.
-        
-        You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
-        as `data-rotate` (these two are basically aliases).
-        
-    -->
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
+    <div class="step slide" data-x="-1000" data-y="1500">
+      <h1>Redmine at MShanken</h1>
+      <dl>
+        <dt>URL (within VPN)</dt>
+          <dd>http://mshanken.redmine.com</dd>
+        <dt>Administrators</dt>
+          <dd>MT</dd>
+          <dd>DC</dd>
+          <dd>RO</dd>
+          <dd>JM</dd>
+        <dt>Methodologies</dt>
+        <dd>Find yours!</dd>
+      </dl>
     </div>
 
-    <!--
-        
-        So to make a summary of all the possible attributes used to position presentation steps, we have:
-        
-        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
-            the canvas in pixels; their default value is 0;
-        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
-            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
-            are exactly the same;
-        * `data-scale` - defines the scale of step element; default value is 1
-        
-        These values are used by impress.js in CSS transformation functions, so for more information consult
-        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
-        
-    -->
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    <div class="step slide" data-x="0" data-y="1500">
+      <h1>Moar Information</h1>
+      <ol>
+        <li><a href="http://redmine.org">The Redmine Project</a></li>
+        <li><a href="http://www.packtpub.com/mastering-redmine/book">Mastering Redmine, Andriy Lesyuk</a></li>
+        <li><a href="http://www.redminebacklogs.net/">Redmine Backlogs: Agile In Redmine</a></li>
+        <li><a href="http://www.mountaingoatsoftware.com/agile/scrum/">Scrum by Mountain Goat Software</a></li>
+      </ol>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="1500">
+      <h1>Now Go Make Projects!</h1>
+      <center>
+        <img src="/images/You_are_a_genius.gif">
+      </center>
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="1500">
+      <h1>Attribution</h1>
+      <dl>
+        <dt>Gifs</dt>
+          <dd>http://reactiongifs.com</dd>
+        <dt>Impress.js</dt>
+          <dd>http://bartaz.github.io/impress.js</dd>
+        <dt>The Rest</dt>
+        <dd>James Meldrum, 2013</dd>
+        <dd>http://twitter.com/jamejamebutdiff/</dd>
+      </dl>
+    </div>
+
+
+    <div id="overview" class="step" data-x="1500" data-y="0" data-scale="8">
     </div>
 
 </div>
 
-<!--
-    
-    Hint is not related to impress.js in any way.
-    
-    But it can show you how to use impress.js features in creative way.
-    
-    When the presentation step is shown (selected) its element gets the class of "active" and the body element
-    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
-    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
-    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
-    
-    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
-    the first step of presentation is visible for a couple of seconds.
-    
-    ...
-    
-    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
-    It's just a quick and dirty workaround to get different hint text for touch devices.
-    In a real world it should be at least placed in separate JS file ... and the touch content should be
-    probably just hidden somewhere in HTML - not hard-coded in the script.
-    
-    Just sayin' ;)
-    
--->
 <div class="hint">
     <p>Use a spacebar or arrow keys to navigate</p>
 </div>
